@@ -20,6 +20,7 @@
   },
   "rules": {
     "@next/next/no-img-element": "off",
+    "react/jsx-props-no-spreading": "off",
     "react/function-component-definition": [
       2,
       {
