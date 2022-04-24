@@ -1,23 +1,31 @@
 # Konel:Next.js - typescript Template
 
-コネルNext.js + TypescriptのTemplate Projectです。
-  - Templateのアップデート以外のコミット厳禁。
-  - Templateのアップデートが必要な場合は、Issueに登録 > PRで改善点の提出 > コードレビューごマージ
+コネル Next.js + Typescript の Template Project です。
 
-## 公式Documentation
-- [Next.js Documentation](https://nextjs.org/docs) - 公式Docs
-- [Learn Next.js](https://nextjs.org/learn) - 公式Tutorial
+- Template のアップデート以外のコミット厳禁。
+- Template のアップデートが必要な場合は、Issue に登録 > PR で改善点の提出 > コードレビューごマージ
+
+## Template の利用方法
+
+Terminal で
+
+```bash
+yarn create next-app --example https://github.com/konel-inc/next-ts-template [APP_NAME]
+```
+
+## Branch 別使用
 
 ## Getting Started
 
 開発サーバーの起動方法
+
 ```bash
 npm run dev
 # or
 yarn dev
 ```
 
-## Learn More
+## 公式 Documentation
 
-To learn more about Next.js, take a look at the following resources:
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [Next.js Documentation](https://nextjs.org/docs) - 公式 Docs
+- [Learn Next.js](https://nextjs.org/learn) - 公式 Tutorial
