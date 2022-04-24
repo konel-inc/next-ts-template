@@ -4,6 +4,7 @@ const Config: UserConfig = {
   extends: ['@commitlint/config-conventional'],
   rules: {
     'type-enum': [2, 'always', ['test', 'fix', 'update', 'release']],
+    'subject-case': [0, 'always', 'sentence-case'],
   },
 }
 

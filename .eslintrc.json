@@ -29,5 +29,5 @@
     ],
     "arrow-body-style": ["off", "always"]
   },
-  "ignorePatterns": [".lintstagedrc.js", "next.config.js"]
+  "ignorePatterns": [".lintstagedrc.js", "next.config.js", "next-sitemap.js"]
 }
