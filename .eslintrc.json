@@ -29,5 +29,5 @@
     ],
     "arrow-body-style": ["off", "always"]
   },
-  "ignorePatterns": ["commitlint.config.js", ".lintstagedrc.js"]
+  "ignorePatterns": [".lintstagedrc.js", "next.config.js"]
 }
