@@ -1,6 +1,6 @@
 import { DefaultTheme } from 'styled-components'
 
-export const Theme: DefaultTheme = {
+const Theme: DefaultTheme = {
   fontSize: {
     global: '16px',
     p: '1em',

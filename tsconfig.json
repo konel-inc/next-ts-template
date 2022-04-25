@@ -22,7 +22,13 @@
       "@/pages/*": ["src/pages/*"],
       "@/layout/*": ["src/components/layout/*"],
       "@/utils/*": ["src/utils/*"]
-    }
+    },
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin",
+        "tags": ["styled", "css", "sty", "createGlobalStyle"]
+      }
+    ]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
