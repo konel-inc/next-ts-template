@@ -7,13 +7,17 @@
 
 ## Template の利用方法
 
-Terminal で
+- Terminal で
+  ```bash
+  yarn create next-app --example https://github.com/konel-inc/next-ts-template [APP_NAME]
+  ```
+- Git で Template-repository を利用 -> make new repository
 
-```bash
-yarn create next-app --example https://github.com/konel-inc/next-ts-template [APP_NAME]
-```
+## Branch 別　使用
 
-## Branch 別使用
+/Styled-components : Styled-components のセッティング、ESLint、各種設定をしています。(main の分岐)
+
+必要なものがあれば、Main から切って生成
 
 ## Getting Started
 
@@ -24,6 +28,28 @@ npm run dev
 # or
 yarn dev
 ```
+
+## Commit Conventions
+
+- [type]: [subject]
+- Linked Issue - subject の最初に、 gh-[issue.No] 表記
+
+### type
+
+[test', 'fix', 'update', 'release]
+
+### Commit workflow
+
+add -> lintstaged -> commitlint
+
+## Enviorments Config
+
+.env.local.example をコピーし、名前を変更
+
+- development : .env.local
+- CI/CD :各設定にしたがう
+
+[Next.js 公式 Docs](https://nextjs.org/docs/basic-features/environment-variables)
 
 ## 公式 Documentation
 
