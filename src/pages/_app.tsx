@@ -7,7 +7,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <GoogleTagManager />
-      <GoogleAnalytics />
+      {/* GAのみ使いたいとき： <GoogleAnalytics /> */}
       <Component {...pageProps} />
     </>
   )
