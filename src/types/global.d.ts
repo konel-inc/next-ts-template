@@ -4,3 +4,5 @@ declare global {
     dataLayer: Record<string, unknown>[]
   }
 }
+
+export {}
