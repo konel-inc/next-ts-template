@@ -2,6 +2,9 @@
 
 ## ~/src/lib ディレクトリ
 
+- javascript(typescript)のモジュール化に利用。
+- 再利用される Script は、特に理由がない限り./src/lib に保存。
+
 ### Path alias
 
 'lib/'
