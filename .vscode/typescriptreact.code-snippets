@@ -1,0 +1,44 @@
+{
+  "konel React-ts-components": {
+    "scope": "typescriptreact",
+    "prefix": "krtc",
+    "body": [
+      "import React from \"react\"",
+      "",
+      "type Props = {",
+      "  item: any",
+      "}",
+      "",
+      "export const ${TM_FILENAME_BASE}:React.FC<Props> = ({item}) => {",
+      "  return (",
+      "    <>",
+      "    </>",
+      "  )",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}"
+    ],
+    "description": "Reactコンポネントを作成します。Propsのタイプ指定必須"
+  },
+  "konel next-ts-pages": {
+    "scope": "typescriptreact",
+    "prefix": "kntp",
+    "body": [
+      "import type { NextPage } from 'next'",
+      "",
+      "type PageProps = {",
+      "  item: any",
+      "}",
+      "",
+      "const ${TM_FILENAME_BASE}: NextPage<Props> = ({ item }) => {",
+      "  return (",
+      "   <></>",
+      "  )",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}",
+      ""
+    ],
+    "description": "NEXT.js用ページを作成します。Propsのタイプ指定必須"
+  }
+}
