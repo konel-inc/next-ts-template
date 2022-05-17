@@ -8,12 +8,19 @@
 ## Template の利用方法
 
 - Terminal で
+
+  YARNで
   ```bash
   yarn create next-app --example https://github.com/konel-inc/next-ts-template [APP_NAME]
   ```
+  
+  NPMで(NPX)
+  ```bash
+  npx create-next-app --example https://github.com/konel-inc/next-ts-template [APP_NAME]
+  ```
 - Git で Template-repository を利用 -> make new repository
 
-## Branch 別　使用
+## Branch分け方
 
 /Styled-components : Styled-components のセッティング、ESLint、各種設定をしています。(main の分岐)
 
