@@ -6,6 +6,9 @@ const Production = () => {
 }
 
 const nextConfig = {
+  experimental: {
+    appDir: true,
+  },
   compiler: {
     /**
      * styled-componentsを利用の場合
@@ -13,7 +16,6 @@ const nextConfig = {
      * */
     removeConsole: Production(),
   },
-  plugins: [],
   reactStrictMode: true,
 }
 
