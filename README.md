@@ -1,3 +1,8 @@
+# Migration Next.js v13
+
+**まだ Amplify をはじめとした環境で支援していません。
+Production 用の APP には使用しないでください。**
+
 # Konel:Next.js - typescript Template
 
 コネル Next.js + Typescript の Template Project です。
@@ -9,18 +14,21 @@
 
 - Terminal で
 
-  YARNで
+  YARN で
+
   ```bash
   yarn create next-app --example https://github.com/konel-inc/next-ts-template [APP_NAME]
   ```
-  
-  NPMで(NPX)
+
+  NPM で(NPX)
+
   ```bash
   npx create-next-app --example https://github.com/konel-inc/next-ts-template [APP_NAME]
   ```
+
 - Git で Template-repository を利用 -> make new repository
 
-## Branch分け方
+## Branch 分け方
 
 /Styled-components : Styled-components のセッティング、ESLint、各種設定をしています。(main の分岐)
 
