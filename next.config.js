@@ -13,7 +13,6 @@ const nextConfig = {
      * */
     removeConsole: Production(),
   },
-  plugins: [],
   reactStrictMode: true,
 }
 
