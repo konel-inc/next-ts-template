@@ -22,5 +22,7 @@
   "editor.formatOnType": false,
   "eslint.codeAction.showDocumentation": {
     "enable": true
-  }
+  },
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }
