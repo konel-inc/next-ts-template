@@ -8,11 +8,11 @@
 
 ## 2023/6/8 Update
 - Dependancy update (全ライブラリをLatestに）
-- Svgr/webpackの設定を基本に埋め込みしました。（SVGをReact Componentとして扱う）import 文のPath最後に、
-”?inline” Queryをつけることで、React Componentとして扱えます（Typescript), File Pathを取得したい場合は、
-Queryなしの状態でImportしてください。
-- @Svgr/webpackの設定は、Defaultにしています。追加Optionが必要な場合は、Docsを参考にして自由に組み込んでください。https://react-svgr.com/docs/webpack/
-- 以外、動画ファイル（.mp4, mov, webm）、Glsl ファイル（.glsl, .freg, .vert）のLoader設定を追加しました。こちらは raw-loaderとglslify-loaderの併用です。
+- Svgr/webpackの設定を基本に埋め込みしました。（SVGをReact Componentとして扱う）
+- @Svgr/webpackの設定は、Defaultにしています。追加Optionはこちらを参照https://react-svgr.com/docs/webpack/
+- File-loader設定：動画ファイル（.mp4, mov, webm）
+- raw-loader、glslify-loader設定 Glsl ファイル（.glsl, .freg, .vert)
+- Styled-component Branch 削除
 
 ### Important: Styled-component settings is default.
 最近の新規プロジェクトの傾向から、Styled-componentの設定を「基本」で埋め込みました。``next.config.js > compiler``
@@ -39,9 +39,6 @@ Styled-componentsを使わない場合は、基本的にはnext.config.js > comp
 - Git で Template-repository を利用 -> make new repository
 
 ## Branch 分け方
-
-/Styled-components : Styled-components のセッティング、ESLint、各種設定をしています。(main の分岐)
-
 必要なものがあれば、Main から切って生成
 
 ## Getting Started
