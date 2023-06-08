@@ -5,6 +5,21 @@
 - Template のアップデート以外のコミット厳禁。
 - Template のアップデートが必要な場合は、Issue に登録 > PR で改善点の提出 > コードレビューごマージ
 
+
+## 2023/6/8 Update
+- Dependancy update (全ライブラリをLatestに）
+- Svgr/webpackの設定を基本に埋め込みしました。（SVGをReact Componentとして扱う）import 文のPath最後に、
+”?inline” Queryをつけることで、React Componentとして扱えます（Typescript), File Pathを取得したい場合は、
+Queryなしの状態でImportしてください。
+- @Svgr/webpackの設定は、Defaultにしています。追加Optionが必要な場合は、Docsを参考にして自由に組み込んでください。https://react-svgr.com/docs/webpack/
+- 以外、動画ファイル（.mp4, mov, webm）、Glsl ファイル（.glsl, .freg, .vert）のLoader設定を追加しました。こちらは raw-loaderとglslify-loaderの併用です。
+
+### Important: Styled-component settings is default.
+最近の新規プロジェクトの傾向から、Styled-componentの設定を「基本」で埋め込みました。``next.config.js > compiler``
+src/pages/_document.tsxに、ServerStyleSheet設定を追記＆update（getInitialProps参照）
+以前「styled-components」Branchには存在していた、<ThemeProvider>の設定とDefaultThemeは意図的に入れていません。Projectの必要に応じて設定してください。(無駄な作業になる可能性が高いため）
+Styled-componentsを使わない場合は、基本的にはnext.config.js > compiler > styledComponent : falseに、_document.tsxのServerStyleSheetの設定も削除。
+  
 ## Template の利用方法
 
 - Terminal で
