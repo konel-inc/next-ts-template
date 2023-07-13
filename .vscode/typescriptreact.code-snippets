@@ -40,5 +40,48 @@
       ""
     ],
     "description": "NEXT.js用ページを作成します。Propsのタイプ指定必須"
+  },
+  "konel-next-page-with-ssr": {
+    "scope": "typescriptreact",
+    "prefix": "kntp-ssr",
+    "body": [
+      "import type {",
+      "  NextPage,",
+      "  GetServerSideProps,",
+      "  GetServerSidePropsContext,",
+      "} from 'next'",
+      "",
+      "type PageProps = {",
+      "  item: any",
+      "}",
+      "",
+      "const ${TM_FILENAME_BASE}: NextPage<PageProps> = ({ item }) => {",
+      "  return (",
+      "    <>",
+      "    </>",
+      "  )",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}",
+      "",
+      "export const getServerSideProps: GetServerSideProps<PageProps> = async (",
+      "  ctx: GetServerSidePropsContext",
+      ") => {",
+      "  /* if you need Cache-Control ",
+      "  ctx.res.setHeader(",
+      "    'Cache-Control',",
+      "    'public, s-maxage=10, stale-while-revalidate=59'",
+      "  )",
+      "  */",
+      "",
+      "  return {",
+      "    props: {",
+      "      item: 'input props',",
+      "    },",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "GetServerSideProps用のNEXT.jsページを作成します。Propsのタイプ指定必要"
   }
 }
