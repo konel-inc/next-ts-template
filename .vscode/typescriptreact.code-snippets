@@ -83,5 +83,38 @@
       ""
     ],
     "description": "GetServerSideProps用のNEXT.jsページを作成します。Propsのタイプ指定必要"
+  },
+  "konel-next-page-with-ssg": {
+    "prefix": "kntp-ssg",
+    "body": [
+      "import type { NextPage, GetStaticProps, GetStaticPropsContext } from 'next'",
+      "",
+      "type PageProps = {",
+      "  data: any",
+      "}",
+      "",
+      "export const ${TM_FILENAME_BASE}: NextPage = () => {",
+      "  return (",
+      "    <div>",
+      "      <h1>Static Page</h1>",
+      "    </div>",
+      "  )",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}",
+      "",
+      "export const getStaticProps: GetStaticProps = async (",
+      "  ctx: GetStaticPropsContext",
+      ") => {",
+      "  ",
+      "  return {",
+      "    props: {",
+      "      data: 'data',",
+      "    },",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "create SSG Page for next page directory."
   }
 }
